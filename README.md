@@ -2,7 +2,7 @@
 
 This repo is a starting point for others who wish to build a [Nest](https://github.com/nestjs/nest) app with minimal footprint. Bundling dependencies using Webpack, and containerized for Docker.
 
-The repo was produced from a fresh `nest new` command, using [nest-cli](https://docs.nestjs.com/cli/usages), with minimal modification. Currently there are some intricacies to bundling dependencies for a Nest app. Please refer to: https://github.com/nestjs/nest/issues/1706
+The repo was produced from a fresh `nest new` command, using [nest-cli](https://docs.nestjs.com/cli/usages), with minimal modification. Currently there are some intricacies to bundling dependencies for a Nest app. Please refer to: [Nest Issue: 1706](https://github.com/nestjs/nest/issues/1706)
 
 For clarification, comments are included in the `Dockerfile` and `webpack.config.json`.
 
