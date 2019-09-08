@@ -1,6 +1,9 @@
 const path = require('path');
 const webpack = require('webpack');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const { NODE_ENV = 'production' } = process.env;
+
+console.log(`-- Webpack <${NODE_ENV}> build --`);
 
 module.exports = {
   entry: './src/main.ts',
@@ -40,15 +43,10 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.js'],
+    plugins: [new TsconfigPathsPlugin({ configFile: './tsconfig.build.json' })],
   },
   module: {
-    rules: [
-      {
-        test: modulePath =>
-          modulePath.endsWith('.ts') && !modulePath.endsWith('spec.ts'),
-        use: ['ts-loader'],
-      },
-    ],
+    rules: [{ test: /\.ts$/, loader: 'ts-loader' }],
   },
   stats: {
     // This is optional, but it hides noisey warnings
