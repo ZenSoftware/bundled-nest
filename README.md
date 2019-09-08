@@ -13,10 +13,13 @@ Produced from a fresh `nest new` command, using [nest-cli](https://docs.nestjs.c
 
 The following packages were added to the default `package.json` produced from the `nest new` CLI command.
 
-```
-webpack
-webpack-cli
-tsconfig-paths-webpack-plugin
+```bash
+webpack@latest
+
+webpack-cli@latest
+
+# used for targeting the "tsconfig.build.json"
+tsconfig-paths-webpack-plugin@latest
 ```
 
 Also 3 new scripts have been introduced into the `package.json`
