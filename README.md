@@ -1,14 +1,25 @@
 # 💥 Nest 🔰 Webpack 🔰 Docker 💥
 
-This repo is a starting point for others who wish to build a [Nest](https://github.com/nestjs/nest) app with minimal footprint. Bundling dependencies using Webpack, and containerized for Docker.
+This repo is a starting point for others who wish to build a [Nest](https://github.com/nestjs/nest) app with minimal footprint. Bundling dependencies with Webpack, and containerized for Docker.
 
-Produced from a fresh `nest new` command, using [nest-cli](https://docs.nestjs.com/cli/usages), with minimal modification. Currently there are some intricacies to bundling dependencies for a Nest app. Please refer to: [Issue: #1706](https://github.com/nestjs/nest/issues/1706)
+|                                                                                 |  Size  |
+| ------------------------------------------------------------------------------- | :----: |
+| production build of `main.js` "Hello World!"                                    | 1.49MB |
+| Containerized as a Docker image [node:12-alpine](https://hub.docker.com/_/node) | 81.9MB |
 
-For clarification, comments are included in the `Dockerfile` and `webpack.config.json`.
+The Alpine variant of Node.js' Docker base image is being used for minimal footprint.
 
-The Alpine variant of Node.js' Docker base image [node:12-alpine](https://hub.docker.com/_/node) is being used for minimal footprint.
+Produced from a fresh `nest new` command, using [nest-cli](https://docs.nestjs.com/cli/usages), with minimal modification. Currently there are some intricacies to bundling dependencies for a Nest app. Please refer to: [Issue: #1706](https://github.com/nestjs/nest/issues/1706) For clarification, comments are included in the `Dockerfile` and `webpack.config.json`.
 
-3 new commands have been introduce in the `package.json`
+The following packages were added to the default `package.json` produced from the `nest new` CLI command.
+
+```
+webpack
+webpack-cli
+tsconfig-paths-webpack-plugin
+```
+
+Also 3 new scripts have been introduced into the `package.json`
 
 ```bash
 # Bundle with webpack
