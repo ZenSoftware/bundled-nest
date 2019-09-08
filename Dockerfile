@@ -12,7 +12,7 @@ COPY dist/ .
 # COPY package*.json ./
 # RUN npm ci --production
 
-ENV PORT=3001
+ENV PORT=3000
 EXPOSE ${PORT}
 
 CMD [ "node", "main.js" ]
