@@ -9,7 +9,7 @@ This repo is a starting point for others who wish to build a [Nest](https://gith
 
 The Alpine variant of Node.js - Docker base image is being used for minimal footprint. Node.js v12 has improved startup times over an already performant startup process. This enables Nest to be an excellent solution for a microservice architecture. Allowing for efficient spinning up of new Kubernetes pods to meet compute demands, and disposed as necessary. Written in Typescript, Nest allows for a familiar, and more declarative development experience for writing modern web services. Check out the [official docs](https://docs.nestjs.com/) to learn more.
 
-This repo demonstrates the minimal amount needed to integrate a bundling system for Nest. Though for commercial projects, I would strongly suggest using a project management tool like Nx, by the company Nrwl. [Getting Started with Nx](https://nx.dev/angular/getting-started/getting-started). It makes full stack development with Nest simple. Nest schematics even work with [Angular Console - VS Code Extension](https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console), with zero configuration needed.
+This repo demonstrates the minimal amount needed to integrate a bundling system and containerize the app as a Docker image. Though for commercial projects, I would strongly suggest using a project management tool like Nx, by the company Nrwl. [Getting Started with Nx](https://nx.dev/angular/getting-started/getting-started). It makes full stack development with Nest simple. Nest schematics even work with [Angular Console - VS Code Extension](https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console), with zero configuration needed.
 
 #
 
