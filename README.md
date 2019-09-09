@@ -13,7 +13,7 @@ This repo demonstrates the minimal amount needed to integrate a bundling system 
 
 #
 
-This repo is produced from a fresh `nest new` command, using [nest-cli](https://docs.nestjs.com/cli/usages), with minimal modification. Currently there are some intricacies for bundling dependencies of a Nest app. [(Issue: #1706)](https://github.com/nestjs/nest/issues/1706) Comments are included in the `Dockerfile` and `webpack.config.json` for clarification. This repo addresses the known issues for you. 🥂
+This repo is produced from a fresh `nest new` command, using [nest-cli](https://docs.nestjs.com/cli/usages), with minimal modification. Currently there are some intricacies for bundling dependencies for a Nest app. [(Issue: #1706)](https://github.com/nestjs/nest/issues/1706) Comments are included in the `Dockerfile` and `webpack.config.json` for clarification. This repo addresses the known issues for you. 🥂
 
 The following packages were added to the default `package.json`.
 
