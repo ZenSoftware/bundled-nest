@@ -1,5 +1,21 @@
 # 💥 Nest 🔰 Webpack 🔰 Docker 💥
 
+## 🏯 Now archived for historical reference ⛩
+
+We've concluded that it is not recommended to bundle NestJS, or actually, NodeJS server apps in general. This is here for historical reference during the period of time when the community was attempting to tree-shake and bundle NestJS apps. Refer to @kamilmysliwiec comment https://github.com/nestjs/nest/issues/1706#issuecomment-579248915 for details:
+
+> In many real-world scenarios (depending on what libraries are being used), you should not bundle Node.js applications (not only NestJS applications) with all dependencies (external packages located in the node_modules folder). Although this may make your docker images smaller (due to tree-shaking), somewhat reduce the memory consumption, slightly increase the bootstrap time (which is particularly useful in the serverless environments), it won't work in combination with many popular libraries commonly used in the ecosystem.
+> For instance, if you try to build NestJS (or just express) application with MongoDB, you will see the following error in your console:
+>
+> ```
+> Error: Cannot find module './drivers/node-mongodb-native/connection'
+> at webpackEmptyContext
+> ```
+>
+> Why? Because mongoose depends on mongodb which depends on kerberos (C++) and node-gyp.
+
+---
+
 This repo is a starting point for others who wish to build a [Nest](https://github.com/nestjs/nest) app with minimal footprint. Bundling dependencies with Webpack, and containerized for Docker.
 
 |                                                                                 |    Size     |
