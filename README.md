@@ -14,6 +14,8 @@ We've concluded that it is not recommended to bundle NestJS, or actually, NodeJS
 >
 > Why? Because mongoose depends on mongodb which depends on kerberos (C++) and node-gyp.
 
+---
+
 For an example of how to build an enterprise grade tech stack, please check out my new project:
 ## [⛩ Zen ⛩ Nest + Prisma + Angular 🏮 Modern Full Stack SPA](https://github.com/ZenSoftware/Zen)
 
